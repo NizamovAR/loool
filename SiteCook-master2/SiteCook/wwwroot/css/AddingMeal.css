@@ -1,0 +1,137 @@
+﻿.main {
+    gap: 3vw;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+p2{
+    margin-top:3vw;
+    font-size:2vw;
+    font-weight:500;
+    color:#999999;
+    margin-left:auto;
+    margin-right:auto;
+}
+#nameRecipe {
+    position:relative;
+    bottom:1vw;
+    margin-left: 2vw;
+    width: 80%;
+    height: 2vw;
+    border-radius: 1vw;
+    border-width: 1px;
+    border-color: #999999;
+    padding: 2vw;
+    padding-top: 2vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+.selects {
+    margin-left: auto;
+    margin-right: auto;
+}
+.selectMeal {
+    border-radius:0.5vw;
+    height:3vw;
+    width: 17vw;
+    margin-right: 4vw;
+}
+.selectIngredient {
+    position:relative;
+    top:0.8vw;
+    border-right:0;
+    border-radius: 0.5vw;
+    height: 5vw;
+    width: 17vw;
+
+}
+.main button {
+    width: 17vw;
+    height: 3vw;
+    border-radius: 1vw;
+    background-color: #FF891D;
+    color: white;
+    font-weight: 400;
+}
+#addStep {
+    margin-left: 4vw;
+
+
+
+}
+#desc {
+    width: 100%;
+    min-height: 10vw;
+    max-height: 10vw;
+    height: 10vw;
+    border-radius: 1vw;
+    border-width: 1px;
+    border-color: #999999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 2vw;
+
+}
+.stepInfo{
+    gap:5vw;
+    display:flex;
+    flex-direction:column;
+}
+    .stepInfo textarea {
+        position: relative;
+        margin-left: 2vw;
+        width: 60%;
+        width:50vw;
+        min-height:13vw;
+        max-height:13vw;
+        height: 10vw;
+        border-radius: 1vw;
+        border-width: 1px;
+        border-color: #999999;
+        padding:1vw;
+        word-wrap:break-word;
+    }
+    .ChooseImage{
+        margin-top:1vw;
+        width:9.4vw;
+        height:3vw;
+    }
+    .stepInfo div{
+        display:flex;
+        flex-direction:row;
+    }
+.stepdiv {
+    display: flex;
+    flex-wrap:wrap;
+}
+.imgdiv {
+    margin-top: 3vw;
+    width: 9vw;
+    height: 9vw;
+    border: 1px solid #999999;
+    border-radius:1vw;
+}
+nav {
+
+}
+.stepInfo textarea{
+    position:relative;
+    top:2.7vw;
+}
+.recImg {
+    margin-top: 3vw;
+    width: 9vw;
+    height: 9vw;
+    border: 1px solid #999999;
+    border-radius: 1vw;
+}
+img {
+    object-fit: cover;
+    width: 9vw;
+    height: 9vw;
+    max-width: 9vw;
+    max-height: 9vw;
+    border: 1px solid #999999;
+    border-radius: 1vw;
+}
+

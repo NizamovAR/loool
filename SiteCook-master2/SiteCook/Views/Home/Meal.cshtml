@@ -1,0 +1,41 @@
+﻿@model List<IngredientName>
+
+@*<div>
+    <h2>@Model.NameMeal</h2>
+    @Html.Raw("<img class='recipeImage' src=\"data:image/jpeg;base64," + Convert.ToBase64String(Model.ImageMeal) + "\" />")
+    <p>@Model.DescriptionMeal</p>
+</div>*@
+@{
+    var recipe = ViewData["Recipes"] as Recipe;
+    ViewData["Title"] = @recipe.Name;
+}
+<link rel="stylesheet" href="~/css/Meal.css" asp-append-version="true" />
+<div class="recipe">
+    @{
+
+        var user = ViewData["Users"] as User;
+        var ingredients = ViewData["Ingredients"] as string;
+
+                            <div class="main">
+                                <div class="imgdiv">
+                                    @Html.Raw("<img class='recipeImage' src=\"data:image/jpeg;base64," + Convert.ToBase64String(@recipe.Photo) + "\" />")
+                                </div>
+                                 <div class="words">
+                                    <p name="name" stitle="font-size:2vw">@recipe.Name</p>
+                                    <p name="desc">@recipe.Description</p>
+                                    <p class=" author">Author: @user.Login</p>
+                                </div>
+                            </div>
+                            <div class="Ingredients">
+                                <p style="font-weight:500; font-size:2vw;position:relative; left:2vw;">Ingredients</p>
+                                @foreach(var item in Model){
+                                    <p>@item.Ingredientname</p>
+                }
+                                
+                                
+                            </div>
+    }
+    <div class="steps">
+
+    </div>
+</div>

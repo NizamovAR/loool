@@ -1,0 +1,126 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    left: 35vw;
+}
+
+.v1_2 {
+    width: 260px;
+    height: 260px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v1_3 {
+    width: 138px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 32px;
+    left: 61px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 10px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_4 {
+    width: 170px;
+    height: 20px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 77px;
+    left: 45px;
+    border: 1px solid rgba(95,95,95,1);
+    overflow: hidden;
+}
+
+.v1_5 {
+    width: 25px;
+    color: rgba(95,95,95,1);
+    position: absolute;
+    top: 67px;
+    left: 45px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 8px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_6 {
+    width: 31px;
+    color: rgba(95,95,95,1);
+    position: absolute;
+    top: 114px;
+    left: 46px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 8px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_7 {
+    width: 170px;
+    height: 20px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 124px;
+    left: 45px;
+    border: 1px solid rgba(95,95,95,1);
+    overflow: hidden;
+}
+
+.v1_8 {
+    width: 120px;
+    height: 30px;
+    background: rgba(255,137,28,1);
+    opacity: 1;
+    position: absolute;
+    top: 193px;
+    left: 70px;
+    border: 1px solid rgba(255,137,28,1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 10px;
+    opacity: 1;
+    text-align: center;
+    color: rgba(255,255,255,1);
+}
+
+.v1_9 {
+    width: 36px;
+    position: absolute;
+    top: 202px;
+    left: 112px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 10px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_10 {
+    width: 69px;
+    color: rgba(27,78,155,1);
+    position: absolute;
+    top: 145px;
+    left: 96px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 8px;
+    opacity: 1;
+    text-align: center;
+}

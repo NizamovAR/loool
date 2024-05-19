@@ -1,0 +1,34 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Личный кабинет";
+    Layout = "_Layout";
+    User user = Model;
+}
+<link rel="stylesheet" href="~/css/Private.css" asp-append-version="true" />
+<form asp-action="PrivateAccount" method="post">
+
+    <div class="Main">
+        <div class="Img">
+            @if (user.Photo != null)
+            {
+                @Html.Raw("<img class='profileImage' src=\"data:image/jpeg;base64," + Convert.ToBase64String(user.Photo) + "\" />")
+            }
+            else
+            {
+                <img class="profileImage"/>
+            }
+            <input required type="file" class="chooseImage" id="photo-uploader" accept=".png, .jpg, .jpeg" name="imgRecipe" />
+        </div>
+        <div class="Texts">
+        <p2>Логин:</p2>
+        <p class="login">@Model.Login</p>
+        <p2>Пароль</p2>
+        <input required type="text" name="Password" value="@Model.Password"/>
+        <p2>Имя</p2>
+        <input required type="text" name="Name" value="@Model.Name"/>   
+        </div>
+        <div class="save">
+            <button class="Save" asp-action="SaveChangesUser">Сохранить изменения</button>
+        </div>
+    </div>
+</form>

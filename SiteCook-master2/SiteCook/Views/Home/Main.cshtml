@@ -1,0 +1,24 @@
+﻿@{
+	ViewData["Title"] = "Главная";
+	Layout = "_LayoutMain";
+}
+
+
+<link rel="stylesheet" href="~/css/Main.css" asp-append-version="true" />
+
+<div>
+		@using (RecipeBookContext db = new RecipeBookContext())	
+		{
+			@foreach (var item in db.Recipes)
+			{
+			<div class="Recipe">
+				<img class="img" src="data:image/jpeg;base64,@Convert.ToBase64String(item.Photo)" alt="@item.Name" />
+				<div class="words">
+					<a asp-action="Meal" asp-route-id="@item.RecipeId" class="name">@item.Name</a>
+					<p2 class="desc">@item.Description</p2>
+				</div>
+			</div>
+
+			}	
+		}
+</div>

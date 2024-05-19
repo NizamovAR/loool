@@ -1,0 +1,131 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    position: absolute;
+    left: 30%;
+}
+
+.v1_323 {
+    width: 260px;
+    height: 260px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v1_324 {
+    width: 138px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 32px;
+    left: 61px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 10px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_325 {
+    width: 170px;
+    height: 20px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 77px;
+    left: 45px;
+    border: 1px solid rgba(95,95,95,1);
+    overflow: hidden;
+}
+
+.v1_326 {
+    width: 25px;
+    color: rgba(95,95,95,1);
+    position: absolute;
+    top: 67px;
+    left: 45px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 8px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_327 {
+    width: 31px;
+    color: rgba(95,95,95,1);
+    position: absolute;
+    top: 114px;
+    left: 46px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 8px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_328 {
+    width: 36px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 202px;
+    left: 112px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 10px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_329 {
+    width: 25px;
+    color: rgba(27,78,155,1);
+    position: absolute;
+    top: 145px;
+    left: 118px;
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 8px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v1_330 {
+    width: 170px;
+    height: 20px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 124px;
+    left: 45px;
+    border: 1px solid rgba(95,95,95,1);
+    overflow: hidden;
+}
+
+.v1_331 {
+    width: 120px;
+    height: 30px;
+    background: rgba(255,137,28,1);
+    opacity: 1;
+    position: absolute;
+    top: 193px;
+    left: 70px;
+    border: 1px solid rgba(255,137,28,1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    color: rgba(255,255,255,1);
+    font-family: Inter;
+    font-weight: Bold;
+    font-size: 10px;
+    opacity: 1;
+    text-align: center;
+}

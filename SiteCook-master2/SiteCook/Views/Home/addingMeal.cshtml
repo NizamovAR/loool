@@ -1,0 +1,74 @@
+﻿	@{
+	ViewData["Title"] = "Добавление рецепта";
+	Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/AddingMeal.css" asp-append-version="true" />
+<form asp-action="addingMeal" method="post" enctype="multipart/form-data">
+		<div class="main">
+			<p2 id="title">Добавление рецепта</p2>
+			<div>
+				<div class="recImg">
+					<img id="uploadingMealImage" />
+				</div>
+				<input required type="file" class="chooseImage" id="photo-uploader" accept=".png, .jpg, .jpeg" name="imgRecipe" />
+				<input type="text" id="nameRecipe" name="nameRecipe" required placeholder="Название рецепта" />
+			</div>
+			<div class=selects> 
+				<select class="selectMeal" name="namecateg">
+					<option disabled selected>Выберите категорию</option>
+					@using (RecipeBookContext db = new RecipeBookContext())
+					{
+						@foreach (var item in db.Categories)
+						{
+							<option>@item.NameCategory</option>
+						}
+					}
+				</select>
+				<select multiple="multiple" name="nameIngredients" class="selectIngredient">
+					<option disabled selected>Выберите ингредиенты</option>
+					@using (RecipeBookContext db = new RecipeBookContext())
+					{
+						@foreach (var item in db.Ingredients)
+						{
+							<option>@item.IngredientName</option>
+						}
+					}
+				</select>
+				<button id="addStep">Добавить шаг</button>
+			</div>
+			<textarea id="desc" type="text" name="desc" required placeholder="Описание блюда" ></textarea>
+			@*<div class="stepInfo">
+				<div class="div1">
+					<nav>
+						<div class="imgdiv">
+							<img id="uploadingMealImage1" />
+						</div>
+						<input required type="file" class="chooseImage" id="photo-uploader1" accept=".png, .jpg, .jpeg" name="photo1" />
+					</nav>
+					<textarea type="text" id="Step1" name="stepText1" required placeholder="Описание шага"></textarea>
+				</div>
+				<div class="div2" style="visibility:hidden;">
+					<nav>
+						<div class="imgdiv">
+							<img id="uploadingMealImagе2" />
+						</div>
+						<input required type="file" class="chooseImage" id="photo-uploader2" accept=".png, .jpg, .jpeg" name="photo2" />
+					</nav>
+					<textarea type="text" id="Step2" name="stepText2"  required placeholder="Описание шага"></textarea>
+				</div>
+				<div class="div3" style="visibility:hidden;">
+					<nav>
+						<div class="imgdiv">
+							<img id="uploadingMealImagе3" />
+						</div>
+						<input required type="file" class="chooseImage" id="photo-uploader3" accept=".png, .jpg, .jpeg" name="photo3" />
+					</nav>
+					<textarea type="text" id="Step3" name="stepText3" required placeholder="Описание шага"></textarea>
+				</div>
+			</div>*@
+			<button type="submit" asp-action="AddRecipe">Сохранить</button>
+
+		</div>
+</form>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/MealAdd.js" asp-append-version="true"></script>

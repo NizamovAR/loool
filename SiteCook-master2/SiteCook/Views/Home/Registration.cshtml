@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Вход";
+    Layout = "_EnterLayout";
+}
+<link rel="stylesheet" href="~/css/Registration.css" asp-append-version="true" />
+<form asp-action="Registration" method="post">
+    <div class="v1_323">
+        <span class="v1_324">РЕГИСТРАЦИЯ</span>
+        <input class="v1_325" name="login">
+        <span class="v1_326">Логин</span>
+        <span class="v1_327">Пароль</span>
+        <span class="v1_328">ВОЙТИ</span>
+        <a asp-action="Authorization" class="v1_329">Войти</a>
+        <input class="v1_330" name="password">
+        <button type="submit" asp-action="Registration" class="v1_331">Зарегистрироваться</button>
+        <span class="v1_332"></span>
+    </div>
+</form>
+<script>
+    // Определение функции для вывода сообщения на странице
+    function showNotification(message) {
+        // Создание элемента div для сообщения
+        var notification = document.createElement("div");
+        notification.className = "notification";
+        notification.innerHTML = message;
+
+        // Добавление элемента на страницу
+        document.body.appendChild(notification);
+
+        // Автоматическое скрытие сообщения через 5 секунд
+        setTimeout(function () {
+            notification.parentNode.removeChild(notification);
+        }, 5000);
+    }
+
+    // Вызов функции для вывода уведомления из C# кода
+    showNotification("@ViewBag.Message");
+</script>

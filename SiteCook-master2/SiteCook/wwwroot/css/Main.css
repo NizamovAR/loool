@@ -1,0 +1,35 @@
+﻿.Recipe {
+    margin: 4vw auto;
+    display: flex;
+    background-color: #FFC49A;
+    border-radius: 10px;
+    width: 70vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+img {
+    margin-left: 2vw;
+    width: 18vw;
+    object-fit: cover;
+}
+
+.words {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw;
+}
+
+.name {
+    margin-top: 2vw;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.desc {
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Шрифт Roboto */
+}

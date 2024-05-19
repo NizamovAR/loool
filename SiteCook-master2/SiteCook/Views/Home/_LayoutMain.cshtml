@@ -1,0 +1,52 @@
+﻿@*@model YourNamespace.Models.UserViewModel // Измените на путь к вашей модели ViewModel.*@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SiteCook</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/siteMain.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SiteCook.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-1 colorHeader">
+            <div class="nav-container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item mt-2">
+                            <button class="Main-Button" id="Button" asp-area="" asp-controller="Home" asp-action="Main">Главная</button>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <button class="Recipes-Button" id="Button" asp-area="" asp-controller="Home" asp-action="FollowingRecipes">Отслеживаемые рецепты</button>
+                        </li>
+                        <li class="dropdown">
+                            <button class="drpButton">...</button>
+                            <div class="dropdown-options">
+                                <a asp-action="AddingMeal">Добавить рецепт</a>
+                                <a @*asp-action="Authorization"*@>Мои рецепты</a>
+                                <a asp-action="PrivateAccount">Мой профиль</a>
+                                <a asp-action="PrivateAccount">Мой подписки</a>
+                                <a @*asp-action="Leave"*@>Выйти из аккаунта</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
